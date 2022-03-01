@@ -150,7 +150,7 @@ export default {
   z-index: -1;
   position: absolute;
   top: -23px;
-  left: -3px;
+  right: -3px;
   border-radius: 3px;
   min-width: 10px;
   background: palette(grey, dark);
