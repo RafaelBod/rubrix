@@ -100,9 +100,8 @@ $buttonSize: 34px;
     @include font-size(12px);
     font-weight: 600;
     color: palette(grey, medium);
-    padding: 1.2em 1.2em 0.8em 1.2em;
     box-shadow: $shadow;
-    min-width: 200px;
+    min-width: 300px;
     a {
       text-decoration: none;
     }
@@ -110,44 +109,24 @@ $buttonSize: 34px;
   &__name {
     color: palette(grey, dark);
     @include font-size(16px);
-    margin: 0 1.5em 0.3em 1.5em;
+    margin: 0 1.5em 0.3em 0;
     font-weight: 600;
+    padding-left: 20px;
   }
   &__mail {
-    margin: 0 1.5em 2em 1.5em;
+    margin: 0 1.5em 2em 0;
+    padding-left: 20px;
   }
   &__link {
     display: flex;
     align-items: center;
     outline: none !important;
-    padding: 0.7em;
-    margin: 0 -0.5em 0 -0.5em;
+    margin-bottom: 1em;
+    padding-left: 20px;
     transition: background-color 0.3s ease-in-out;
     border-radius: $border-radius;
-    &:hover {
-      background: #f5f5f5;
-      transition: background-color 0.3s ease-in-out;
-    }
-    &__circle {
-      @extend %circle;
-      margin-right: 0.7em;
-      background: palette(grey, dark);
-      color: $lighter-color;
-      &.active {
-        background: $primary-color;
-      }
-    }
-    &__name {
-      color: palette(grey, dark);
-      margin-top: 0;
-      margin-bottom: 0;
-      line-height: 1.4em;
-      span {
-        display: block;
-        margin-top: 0;
-        margin-bottom: 0;
-        color: palette(grey, medium);
-      }
+    .svg-icon {
+      margin-right: 0.5em;
     }
   }
 }
